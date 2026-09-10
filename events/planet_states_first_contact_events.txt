@@ -60,6 +60,10 @@ first_contact_event = {
 		sound = event_first_contact_humanoid
 		trigger = { contact_country = { is_species_class = TOX } }
 	}
+	show_sound = {
+		sound = event_first_contact_molluscoid
+		trigger = { contact_country = { is_species_class = AQUATIC } }
+	}
 	
 	is_triggered_only = yes
 	first_contact = yes
@@ -138,6 +142,10 @@ first_contact_event = {
 	show_sound = {
 		sound = event_first_contact_humanoid
 		trigger = { contact_country = { is_species_class = TOX } }
+	}
+	show_sound = {
+		sound = event_first_contact_molluscoid
+		trigger = { contact_country = { is_species_class = AQUATIC } }
 	}
 	is_triggered_only = yes
 	first_contact = yes

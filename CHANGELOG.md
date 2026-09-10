@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.1 — Stellaris 4.4.6
+
+- Nomad empires can use the in-borders hostility rule against Planet-States (vanilla `is_nomadic` branch no longer blocks them entirely).
+- First-contact sounds cover Aquatic portraits.
+
 ## 2.0.0 — Stellaris 4.4.6 (Pegasus)
 
 Port from the 2019 original / 3.4 The24thDS fork to live Stellaris.

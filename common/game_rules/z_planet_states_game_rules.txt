@@ -24,6 +24,7 @@ can_take_hostile_actions = {
 		limit = {
 			ROOT = { is_nomadic = yes }
 			NOT = { has_country_flag = hostile_to_nomads }
+			NOT = { is_country_type = planet_state }
 		}
 		custom_tooltip = {
 			text = "CAN_TAKE_HOSTILE_ACTION_FIRST_CONTACT_PROTOCOL"
@@ -121,7 +122,10 @@ can_take_hostile_actions = {
 	else_if = {
 		limit = {
 			is_country_type = planet_state
-			ROOT = { is_country_type = default }
+			OR = {
+				ROOT = { is_country_type = default }
+				ROOT = { is_nomadic = yes }
+			}
 			capital_scope = {
 				root = {
 					NOT = {
