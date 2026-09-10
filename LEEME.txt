@@ -1,0 +1,38 @@
+Planet States (4.4) — instalación local
+=====================================
+
+1. Descomprimí este zip.
+
+2. Copiá ESTAS DOS COSAS (juntas) a la carpeta mod de Stellaris:
+
+   planet_states.mod
+   planet_states/          (la carpeta completa)
+
+   Windows:
+     Documentos\Paradox Interactive\Stellaris\mod\
+
+     Si usás OneDrive, a veces es:
+     C:\Users\TU_USUARIO\OneDrive\Documents\Paradox Interactive\Stellaris\mod\
+
+   Linux:
+     ~/.local/share/Paradox Interactive/Stellaris/mod/
+
+   macOS:
+     ~/Documents/Paradox Interactive/Stellaris/mod/
+
+3. Abrí el launcher de Stellaris → pestaña Mods → activá
+   "Planet States (4.4)" en un playset.
+
+4. Partida NUEVA. Los cuatro estados solo aparecen con on_game_start.
+
+5. No lo combines con Planet States Revived.
+
+Smoke test (15–20 min):
+  - 4 sistemas con estación Planet-State
+  - first contact abre
+  - un trato 10/20 entrega el recurso
+  - podés construir starbase en SU sistema
+  - no podés declararles guerra desde fuera de fronteras
+
+Cuando eso pase: launcher → Mods → Mod tools → Upload mod
+(Steam abierto, Cloud Sync de Stellaris ON). Primera vez: Hidden.

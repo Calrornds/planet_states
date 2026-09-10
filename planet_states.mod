@@ -8,3 +8,4 @@ tags={
 name="Planet States (4.4)"
 picture="thumbnail.png"
 supported_version="v4.4.*"
+path="mod/planet_states"
