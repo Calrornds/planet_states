@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_planet_state"
+		texturefile = "gfx/event_pictures/space_station.dds"
+		alwaystransparent = yes
+	}
+}
