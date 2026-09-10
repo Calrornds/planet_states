@@ -2,7 +2,39 @@
 
 Live target: Stellaris **4.4.x** (Pegasus, Nomads DLC). Economy and pops still follow **4.0 Phoenix**. Scripts written for 2.x / 3.x will not boot cleanly.
 
-This file is a Project knowledge base for making, porting, and updating Stellaris mods. It does not describe a specific mod.
+This file is a **snapshot** of 4.4 practice. It is not the script API. When syntax, scopes, on_actions, or patch behaviour are uncertain, look them up in the living sources below **before inventing**. Wiki pages lag; vanilla files and `script_documentation` dumps match the installed build.
+
+This file does not describe a specific mod.
+
+---
+
+## Living sources (look these up)
+
+Order when something is unknown:
+
+1. Vanilla install — `Stellaris/common/`, `events/`, `interface/` for the same object type as the change.
+2. Local script dump — `Documents/Paradox Interactive/Stellaris/logs/script_documentation/` (`triggers.log`, `effects.log`, modifiers, on_actions). Regenerated when the game runs. This is the live API.
+3. `error.log` in the same `logs/` folder after a boot with the mod loaded.
+4. Stellaris Wiki (**paradoxwikis.com**, not fandom):
+   - [Modding](https://stellaris.paradoxwikis.com/Modding)
+   - [Modding tutorial](https://stellaris.paradoxwikis.com/Modding_tutorial)
+   - [Effects](https://stellaris.paradoxwikis.com/Effects)
+   - [Conditions / triggers](https://stellaris.paradoxwikis.com/Conditions)
+   - [Scopes](https://stellaris.paradoxwikis.com/Scopes)
+   - [On actions](https://stellaris.paradoxwikis.com/On_actions)
+   - [Event modding](https://stellaris.paradoxwikis.com/Event_modding)
+   - [Dynamic modding](https://stellaris.paradoxwikis.com/Dynamic_modding)
+   - [Console commands](https://stellaris.paradoxwikis.com/Console_commands)
+   - [Steam Workshop upload](https://stellaris.paradoxwikis.com/Steam_Workshop)
+5. Patch notes — wiki [Patches](https://stellaris.paradoxwikis.com/Patches), then the version page ([Patch 4.4.X](https://stellaris.paradoxwikis.com/Patch_4.4.X), [Patch 4.0](https://stellaris.paradoxwikis.com/Patch_4.0)). Read the **Modding** subsection. Forum originals: threads titled `[Dev Team] Stellaris <version> patch released` on [forum.paradoxplaza.com](https://forum.paradoxplaza.com/forum/forums/stellaris.900/).
+6. Dev diaries — [Stellaris Dev Diary](https://forum.paradoxplaza.com/forum/forums/stellaris-dev-diary.951/). 4.0 Phoenix economy/pops, 4.4 Pegasus Colony/Carrier/`is_nomadic`. Diaries are intent; patch notes + vanilla are truth.
+7. API history across patches — [OldEnt stellaris-triggers-modifiers-effects-list](https://github.com/OldEnt/stellaris-triggers-modifiers-effects-list).
+8. User mods forum — [Stellaris User Modifications](https://forum.paradoxplaza.com/forum/forums/stellaris-user-mods.941/) (confirm the subforum if the ID moved). Precedent, not API.
+9. A maintained Workshop mod that already solved the same problem. Open its files; do not copy wholesale.
+
+Do not use stellaris.fandom.com as primary. paradoxwikis.com is the community wiki Paradox links.
+
+If wiki and vanilla disagree, **vanilla + script_documentation win**.
 
 ---
 
