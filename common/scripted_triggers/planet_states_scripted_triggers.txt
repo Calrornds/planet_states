@@ -9,12 +9,17 @@ is_appropriate_planet_state_system = {
 		has_star_flag = marauder_system
 		has_star_flag = caravaneer_home
 		has_star_flag = primitive_system
+		has_star_flag = planet_state
+		has_star_flag = nomad_origin_start
+		has_star_flag = sealed_system
+		has_star_flag = lcluster
 	}
 	any_system_planet = {
 		uninhabitable_regular_planet = yes
 		has_anomaly = no
 	}
 }
+
 
 has_active_ps_egalitarian_trade_deal = {
 	OR = {
@@ -77,5 +82,19 @@ has_any_active_ps_pacifist_deal = {
 	OR = {
 		has_active_ps_pacifist_trade_deal = yes
 		has_modifier = modifier_ps_pacifist_commercial_pact
+	}
+}
+
+
+districts_count_min_max = {
+	AND = {
+		num_free_districts = {
+			type = $TYPE$
+			value < $MAX$
+		}
+		num_free_districts = {
+			type = $TYPE$
+			value >= $MIN$
+		}
 	}
 }

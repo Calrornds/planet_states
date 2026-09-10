@@ -1,3 +1,5 @@
+# Planet States — independent one-planet countries (enclave-like, but they own a colony).
+# 4.4: destroys_starbases is no so a player can build a starbase in their system.
 
 planet_state = {
 	sub_title = "COUNTRY_PLANET_STATE"
@@ -6,10 +8,21 @@ planet_state = {
 	show_in_contacts_list = yes
 	custom_diplomacy = yes
 	share_survey_data = no
-	destroys_starbases = yes
+	destroys_starbases = no
 	can_have_their_comms_shared = yes
 	observable = no
 	custom_opinion = yes
+	has_capital = yes
+	can_planets_be_attacked = yes
+	relations = yes
+	government = yes
+	can_receive_envoys = yes
+	pop_growth = yes
+	orbital_bombardment = yes
+	needs_survey = no
+	has_complete_sensor = no
+	enforces_borders = no
+	blocks_piracy = yes
 
 	faction = {
 		hostile = no
@@ -17,6 +30,8 @@ planet_state = {
 		needs_border_access = no
 		generate_borders = no
 		needs_colony = yes
+		primitive = no
+		intel_effects_surveyed = no
 	}
 
 	ai = {
@@ -36,9 +51,7 @@ planet_state = {
 		standard_leader_module = {}
 		standard_economy_module = {}
 		standard_species_rights_module = {}
-		exclusive_diplomacy_module = {
-			contact_rule = script_only
-		} # Nothing is allowed, but we need this for relationships.
+		exclusive_diplomacy_module = {} # Nothing is allowed, but we need this for relationships.
 	}
 
 	resources = {
@@ -56,6 +69,8 @@ planet_state = {
 			sr_living_metal = 2
 			sr_zro = 2
 			influence = 3
+			unity = 20
+			trade = 10
 		}
 	}
 }

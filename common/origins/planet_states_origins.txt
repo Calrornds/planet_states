@@ -1,0 +1,19 @@
+# Unplayable origin assigned at spawn so Planet States do not roll a random origin
+# (Necrophage / Knights / etc. used to break their setup).
+
+origin_planet_state = {
+	is_origin = yes
+	icon = "gfx_origin_default"
+	picture = GFX_origin_default
+
+	playable = {
+		always = no
+	}
+
+	possible = {
+		always = no
+	}
+
+	description = "origin_planet_state_effects"
+	flags = { custom_origin advanced_start_for_natives }
+}

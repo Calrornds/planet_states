@@ -1,4 +1,4 @@
-# Planet-States
+# Planet-State defense station. Uses the vanilla enclave station entity.
 
 planet_state_station = {
 	is_space_object = yes
@@ -9,6 +9,7 @@ planet_state_station = {
 	rotation_speed = 0.10
 	modifier = {
 		ship_evasion_mult = -1
+		ship_hull_mult = 0.25
 	}
 	max_hitpoints = 500000
 	combat_size_multiplier = 20
@@ -18,7 +19,9 @@ planet_state_station = {
 	num_target_locators = 0
 	is_space_station = yes
 	build_block_radius = @build_block_radius_civilian
-
+	icon_frame = 1
 	class = shipclass_military_station
 	is_designable = no
+	can_have_federation_design = no
+	enable_default_design = no
 }
